@@ -44,7 +44,7 @@ a#pdf { display: block; float: left; background: #666; color: white; padding: 6p
 a#pdf:hover { background: #222; }
 
 .job { position: relative; margin-bottom: 1em; padding-bottom: 1em;  line-height:25px ;}
-.job h4 { position: absolute; top: 0.35em; right: 0 }
+.job h4 { position: absolute; top: 10.35em; right: 0 }
 .job p { margin: 0.75em 0 3em 0; }
 
 .last { border: none; }
@@ -60,7 +60,7 @@ a#pdf:hover { background: #222; }
 
 /* --// override to force 1/8th width grids -- */
 .yui-gf {width:90.2%; display: flex;}
-.yui-u{width:80.2%;margin-left: 5%; display: inline; }
+.yui-u{width:90.2%;margin-left: 5%; display: inline; }
 .yui-gf div.first{width:20.3%;}
 #curso:hover{cursor: pointer; color: red;}
 .plataformas{  display: flex;flex-direction: row;position: fixed; height: 9%; width: 15%; left: 40%; position: relative;}
@@ -68,7 +68,6 @@ a#pdf:hover { background: #222; }
 #github:hover{cursor: pointer;    box-shadow: 5px -5px rgb(136, 133, 131), -5px 5px rgb(136, 133, 131);}
 #linkeding{background-image: url(imagenes/linkedin3.png); border-radius: 50%; background-size:100% 100%; background-repeat: no-repeat; background-position: center;  height: 100%;width: 42%;position: relative; left: 19%; }
 #linkeding:hover{box-shadow: 5px -5px rgb(136, 133, 131), -5px 5px rgb(136, 133, 131);}
-
 
 
 
