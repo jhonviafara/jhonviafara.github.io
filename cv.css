@@ -60,8 +60,8 @@ a#pdf:hover { background: #222; }
 
 /* --// override to force 1/8th width grids -- */
 .yui-gf {width:80.2%;}
-.yui-u{width:80.2%;margin-left: 5%; }
-.yui-gf div.first{width:12.3%;}
+.yui-u{width:80.2%;margin-left: 5%; display: inline; }
+.yui-gf div.first{width:20.3%;}
 #curso:hover{cursor: pointer; color: red;}
 .plataformas{  display: flex;flex-direction: row;position: fixed; height: 9%; width: 15%; left: 40%; position: relative;}
 #github{ background-image: url(imagenes/git4.png); border-radius: 50%; background-size:100% 100%; background-repeat: no-repeat; background-position: center; height: 90%;width: 40%;}
