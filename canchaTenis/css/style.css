@@ -1,0 +1,279 @@
+body{
+    background-color: #883f07ec;
+}
+h1{
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0%;
+}
+p{
+   text-align: center;
+   color: #fff;
+   font-size:1fr;  
+}
+header{
+    text-align: center;
+}
+h4{
+    text-align: center;
+    color:whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.container{
+    width:80vw ;
+    height:80vh ;
+    position: relative;
+    display: flex;
+    left: 9%;
+}
+div[class=left]{
+    border: solid 3px white;
+    width: 49%;
+    height: 90%;
+    border-radius: 4% 0  0  4%  ;
+    position: absolute;  
+   background-color: #039132;
+}
+div[class=rigth]{
+    border: solid 3px white;
+    width: 49%;
+    height: 90%;
+    right: 0;
+    position: absolute;
+    border-radius:0  4%    4%  0 ;
+    background-color: #039132  
+}
+.left:hover{
+    box-shadow:  0px 0px 20px   rgb(171, 186, 223) ;
+    cursor: pointer;
+}
+.rigth:hover{
+    box-shadow:  0px 0px 20px   rgb(171, 186, 223) ;
+    cursor: pointer;
+}
+.welcome{
+    border-bottom: solid 2px white;
+    height:16% ;
+    width: 100%;
+    position: absolute;
+}
+.welcome:hover{
+    background: linear-gradient(to top, rgba(8, 223, 8, 0.842),#039132);
+    border-radius: 17% 0% 0% 0%;
+}
+.productos{
+    position: absolute;
+    height: 34%;
+    width: 60%;
+    top: 16%;
+    left:  40%;
+    border-bottom: solid 2px white;
+}
+.container-product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    height: 55%;
+    margin: auto;
+}
+.product{
+    margin: 3%;
+   height: 50%;
+   width: 35%;
+    border: 1px solid black;  
+    background-color: rgba(148, 116, 28, 0.562); 
+}
+
+.product:hover{
+    transform: scale(1.0);
+    transform: translateY(-7px); 
+    height: 70%;
+    width: 40%; 
+    
+}
+#emergent-descrip{
+    opacity: 0.0;
+}
+.product:hover #emergent-descrip{
+    opacity: 1.0;
+    font-size: 0.8em;
+    animation-name: imagenes;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+.reglas{
+    top: 50%;
+    height: 34%;
+    width: 60%;
+    left:  40%;
+    position: absolute;
+    border-top: solid white 2px;
+   
+}
+.reglas #regla{
+line-height: 10%;
+}
+#reglamentacion{
+    margin-bottom:25%;
+}
+#img{
+    background-color: white;
+    border-right: solid 2px white ;
+    height: 67%;
+    width:40% ;
+    top: 16.4%;
+    position: absolute;
+}
+#clases-grupales{
+    height: 100%;
+    width: 100%;
+}
+#img:hover{
+   margin: 0% auto;
+}
+.reservclas{
+    width: 100%;
+    height:16% ;
+    bottom:0 ;
+    position: absolute;
+    border-top: solid 2px white; 
+}
+.reservclas:hover{
+    background: linear-gradient(to bottom, rgba(8, 223, 8, 0.842),#039132);
+    border-radius: 0px 0px 0px 17px;
+
+}
+.horario{
+    border-bottom: solid 2px white;
+    height:16% ;
+    width: 100%;
+    position: absolute;
+    line-height: 0.5%; 
+    overflow: hidden;
+}
+.horario:hover{
+    background: linear-gradient(to top, rgba(8, 223, 8, 0.842),#039132);
+    border-radius: 0% 17% 0% 0%;
+}
+.containBall{
+    position:relative;
+    width: 80vw;
+    height: 7vh;
+    left: 9%;
+    margin-bottom:1% ;
+}
+#ball{
+    position:relative;
+    width: 3em;
+    height:3em ;
+    background-image: url(../images/tenis3.png);
+    background-size: contain;
+    border-radius: 50%;
+    top: 10%;
+    animation-name: efectBall;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.ultimos_juegos{
+    position: absolute; 
+    height: 34%;
+    width: 60%;
+    top: 16%;
+    right:  40%;
+    border-bottom: solid 2px white;
+}
+.tabla_juegos{
+    width: 80%;
+    height: 50%;
+    position: relative;
+    left: 10%;
+    overflow: scroll;
+    margin: 1%;
+  }
+#ultimos_partidos{
+    position: relative;
+   width: 100%;
+}
+
+#cabecera_puntos{
+    background-color: #1d95df;
+}
+#puntos_equi{
+    background-color: #fff;
+}
+#fila_1:hover{
+    background-color:  #007AC4;
+}
+#fila_2:hover{
+    background-color:  #007AC4;
+}
+.blog{
+    top: 50%;
+    position: absolute;   
+    height: 34%;
+    width: 60%;
+    right:40%;
+}
+.clases_privadas{
+    position: absolute;
+    border-left: solid 2px white ;
+    height: 67%;
+    width:40% ;
+    right:0;
+    top: 16.4%;
+}  
+.clases_privadas:hover{    
+    font-size:20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    filter: grayscale(1);  
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.ubicacion{
+    width: 100%;
+    height:16% ;
+    bottom:0 ;
+    position: absolute;
+    border-top: solid 2px white ;
+   
+}
+.ubicacion:hover{
+    background: linear-gradient(to bottom, rgba(8, 223, 8, 0.842),#039132);
+    border-radius: 0px 0px 17px  0px;
+}
+@keyframes efectBall {
+    0% {
+      transform: translateX(76vw);
+    }
+    100% {
+      transform: translateX();
+    }
+}
+@keyframes imagenes {
+    0%{
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../images/raquetas/raqu.jpeg);
+    }
+    20%{
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../images/raquetas/raquet.jpeg);
+    }
+    40%{
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../images/raquetas/raquetas.jpeg);
+    }
+    60%{
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../images/raquetas/raquetasss.jpeg);
+    }
+}
