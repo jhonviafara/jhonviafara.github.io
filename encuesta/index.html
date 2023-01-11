@@ -32,36 +32,34 @@
                 <form >  
                     <div class="mb-3">
                         <label class="form-label" for="nombre">Nombre completo:</label>
-                        <input type="text" id="nombre" onkeyup="validateName()" name="nombre" class="form-control" autofocus>
+                        <input type="text" id="nombre"  onkeydown="validateName()" minlength="10" maxlength="30" name="nombre" class="form-control" autofocus required>
                         <div id="emailHelp"  class="form-text "> <span id="validacionNombre"></span></div>  
                     </div>
                     <div class="mb-3 form-floating">
-                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                            <option selected>lenguajes</option>
+                        <select class="form-select" id="validationlenguaje" onclick="selectLenguaje()" aria-label="Floating label select example">
+                            <option  selected value="0">seleccione un lenguaje</option>
                             <option value="1">javascript</option>
                             <option value="2">phyton</option>
-                            <option value="3" >ruby</option>
-                            <option value="4" >php</option>
-                            <option value="5" >nodejs</option>
-                            <option value="6">.net</option>
-                            <option value="6">.java</option>
-                            <option value="7">css</option>
+                            <option  value="3" >ruby</option>
+                            <option  value="4" >php</option>
+                            <option  value="5" >nodejs</option>
+                            <option  value="6">.net</option>
+                            <option  value="7">.java</option>
+                            <option  value="8">css</option>
                           </select>
-                          <label for="floatingSelect">seleccione uno por formulario</label>
-                          <div id="emailHelp"  class="form-text"> <span id="validateName"></span></div>
-                        
+                          <label for="floatingSelect" id="mensajeSelect"></label>                        
                     </div>
                     <div class="mb-3">
                         <label for="descripcion" class="form-label"> Descripcion:</label>
-                        <textarea name="" id="descripcion"  class="form-control" cols="30" rows="3" placeholder="Descripcion del lenguaje"></textarea>
+                        <textarea name="" id="descripcion"  class="form-control" cols="30" rows="3" placeholder="Descripcion del lenguaje" minlength="10" maxlength="220" requerid></textarea>
                     </div>
                     <div class="mb-3">
-                        <label for="programador" class="form-label">Años de experiencia</label>
-                        <input type="number" name="" class="form-control" id="programador">
+                        <label for="añosExperiencia" class="form-label">Años de experiencia</label>
+                        <input type="number" name="añosExperiencia" class="form-control" id="añosExperiencia"  onclick="validateExperi()" required> <span id="mensajeExperiencia"></span>
                     </div>
                     <div class="d-grid gap-2">
-                        <button type="button" class="btn btn-success" >guardar</button>
-                        <button type="button" class="btn btn-secondary ">limpiar</button>
+                        <button  class="btn btn-success" type="submit"  >enviar</button>
+                        <button type="button" class="btn btn-secondary" id="clear" onclick="vaciarCampos()">limpiar</button>
                     </div>
                 </form>
             </div>
@@ -82,12 +80,12 @@
                             <td class="centrado">200</td>
                         </tr>
                         <tr>
-                            <td class="centrado">130</td>
+                            <td class="centrado">2</td>
                             <td class="centrado">python</td>
                             <td class="centrado">110</td>
                         </tr>
                         <tr>
-                            <td class="centrado">260</td>
+                            <td class="centrado">3</td>
                             <td class="centrado">java</td>
                             <td class="centrado">40</td>
                         </tr>

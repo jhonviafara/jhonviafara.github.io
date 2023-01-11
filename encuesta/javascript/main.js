@@ -1,28 +1,24 @@
 function validateName(event) {
-    var mensaje = document.getElementById("validacionNombre")
-    if (nombre.value.trim().length== ""  ) 
-    {
-      mensaje.innerHTML=" campo obligatorio"
-    }
-  if (nombre.value.trim().length >= 1) {
-     mensaje.innerHTML="mas de 10 caracteres obligatorio";
-  }
- if (nombre.value.trim().length >= 10) {
-    mensaje.innerHTML="tamaño aceptado";
-      if (nombre.value.trim().length >= 14 ) {
-          mensaje.innerHTML=""
-
-          
-        }
-  }
-  if (nombre.value.trim().length >= 30 ) {
-      mensaje.innerHTML="tamaño ecxedido";
-  }
- 
-  
-  return  true;
-  
+    let mensaje = document.getElementById("validacionNombre")
+    if (nombre.value.trim().length ==0 || nombre.value.trim().length ==""){
+      mensaje.innerHTML = " campo obligatorio"
+    }if(nombre.value.trim().length >=1){
+      mensaje.innerText=""  
+    }   
 }
 function selectLenguaje(event) {
-    
+    let textSelect = document.getElementById("mensajeSelect")
+         if(validationlenguaje.value==0 ||  validationlenguaje.value=="") {
+      textSelect.innerHTML="campo obligatorio"
+    }if( validationlenguaje.value >= 1){
+      textSelect.innerHTML="Lenguaje seleccionado:"
+    } 
 }
+function validateExperi(event) {
+  let mensajeAlert = document.getElementById("mensajeExperiencia")
+    if (añosExperiencia.value==0 || añosExperiencia.value=="" || añosExperiencia.value-0) {
+      mensajeAlert.innerHTML="seleccione un minimo de un año "
+    } if (añosExperiencia.value >0) {
+      mensajeAlert.innerHTML="campo lleno"
+    }}
+
