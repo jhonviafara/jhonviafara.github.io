@@ -33,7 +33,7 @@
                      <p>
                         <label class="form-label py 1" for="nombre">Nombre completo:</label>
                         <div id="emailHelp"  class="form-text "> <span id="validacionNombre"></span></div>
-                        <input type="text" id="nombre"  onkeyup="validateName()" onmouseover="mensaje()" name="nombre" class="form-control" autofocus required>  
+                        <input type="text" id="nombre"  onkeydown="validateName()" onmouseover="mensaje()" name="nombre" class="form-control" autofocus required>  
                     </p>
                     <p >
                         <div id="emailHelp"  class="form-text "> <span id="mensajeSelect"></span></div>
@@ -60,7 +60,7 @@
                     </p>
                     <div class="d-grid gap-2">
                         <button id="envio" class="btn btn-success" type="submit" value="continuar" onclick="animacionMensaje()">enviar</button>
-                        <button type="reset" onc class="btn btn-secondary" id="clear" >limpiar</button>
+                        <button type="reset" onclick="validateExperi()" class="btn btn-secondary" id="clear" >limpiar</button>
                     </div>
                 </form>
             </div>
