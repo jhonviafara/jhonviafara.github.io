@@ -76,15 +76,16 @@ a#pdf:hover { background: #222; }
     .perfil { border-radius: 50%; margin-left: 10%; }
     #imprimir{ margin-left: 10%; margin: auto; border-radius: 50%;}
     .job { position: relative;   line-height:1em ;}
-    #habilidadTe{ font-size: 0,5em;}
+    
+    
 }
-@media print and (orientation: portrait) {
+@media print and (orientation: portrait) and (max-width:992px) {
     body{ margin-top: 3%; margin-left: 3%;margin-right: 3%;}
     .plataformas {display: none; }
     #title{display: none;}
     #inner{padding: 5px 10px; margin:50px auto ;}
     .yui-gf div.first{width:24.3%;}
-    .yui-u{ width: ; padding-right: 1em; margin-left: 1%;}
+    .yui-u{  padding-right: 1em; margin-left: 1%;}
     p{padding-right: 0em; line-height: 25px;}
      #ft {padding: 0em;}
       
