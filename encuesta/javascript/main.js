@@ -1,9 +1,4 @@
-function mensaje(event){
-  let mensajename = document.getElementById("validacionNombre").innerHTML="campo obligatorio"
-}
-function mensajeLenguaje(event){
-let mensajeLengua= document.getElementById("mensajeSelect").innerHTML="campo obligatorio"
-}
+
 
 function validateName(event) {
     let mensaje = document.getElementById("validacionNombre")
@@ -33,13 +28,6 @@ function validateExperi(event) {
     } if (añosExperiencia.value >0) {
       mensajeAlert.innerHTML="campo lleno"
     }}
-function animacionMensaje(event) {
-  let enviar = document.getElementById("envio")
-  if (enviar.value==true) { 
 
-    
-  }
-  
-}
 
 //el status de una orden realizada es 200 trabajar el fi condional con el estado del formularioo
