@@ -1,0 +1,18 @@
+header{position: static; z-index: 0; height: 15vh; overflow: hidden; margin: 0; background-image: linear-gradient(to right, #008000 0%,#ffffff 40%, #ffffff 50%,#ffffff 60%, #008000 100%);}
+#logo{z-index: 1; background-image: url(/src/logo_villa_albino.jpg); background-size: cover; border: 1px solid black; height: 50px; width: 50px; position: relative; left: 5%; top: 20%;}
+#btn-wtp{position: fixed; bottom: 0%; right: 0%;margin: 1%; height: 10%; width:5% ; border-radius: 50%; background-image:  url(../src/whatsapp.png);background-position: center; background-repeat: no-repeat; background-size: cover; }
+#btn-wtp:hover{cursor: pointer;}
+footer{position: fixed; bottom: 0%; left: 0%;margin-left: 1%;}
+main{ padding-bottom: 10%;}
+
+
+
+
+
+
+
+
+@media screen and  (max-width:992px)  {
+    #btn-wtp{height: 8vh; width:16vw; margin: 2%; position: fixed; padding-top: 1%;}  
+    footer{position: fixed; bottom: 0%; left: 0%;margin-left: 1%;padding-top: 5%;}
+} 
